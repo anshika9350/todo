@@ -1,11 +1,11 @@
 
 import './App.css';
-import Header from './my components/Header';
-import React,{mycomponents} from 'react';
+import Header from './mycomponents/Header';
+import React from 'react';
 
 function App() {
   return (
-    <><header/></>
+    <><Header/></>
   );
 }
 
