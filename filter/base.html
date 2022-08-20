@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css_final.css">
+
+    <script src="./filter.js"></script>
+
+    <!-- <link rel="stylesheet" href="./css-1.css"> -->
+    <title>Fixed table</title>
+</head>
+
+<body>
+    
+    <div class="outer-wrapper">
+    <div class="table-wrapper">
+    <table id="emp-table">
+        <thead>
+            
+            <th col-index = 1>scheme
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all">a</option>
+                    <option value="all">a</option>
+                    <option value="all">a</option>
+                    <option value="all">a</option>
+                    <option value="all">a</option>
+                </select>
+            </th>
+
+            <th col-index = 2>Disability
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 3>scheme name
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <td>central government</td>
+                <td>type1</td>
+                <td>scheme1</td>
+                
+            </tr>
+            <tr>
+                
+                <td>central government</td>
+                <td>type2</td>
+                <td>scheme2</td>
+                
+            </tr>
+            <tr>
+                
+                <td>all state government</td>
+                <td>type2</td>
+                <td>scheme1</td>
+                
+            </tr>
+            <tr>
+                
+                <td>all state government</td>
+                <td>type3</td>
+                <td>scheme1</td>
+                
+            </tr>
+            <tr>
+                
+                <td>all state government</td>
+                <td>type3</td>
+                <td>scheme3</td>
+                
+            </tr>
+            <tr>
+                
+                <td>all state government</td>
+                <td>type3</td>
+                <td>scheme1</td>
+                
+            </tr>
+            <tr>
+                
+                <td>central government</td>
+                <td>type2</td>
+                <td>scheme1</td>
+                
+            </tr>
+            <tr>
+                
+                <td>central government</td>
+                <td>type2</td>
+                <td>scheme1</td>
+                
+            </tr>
+            <tr>
+                
+                <td>all state government</td>
+                <td>type4</td>
+                <td>scheme1</td>
+    
+            </tr>
+            <tr>
+                
+                <td>all state government</td>
+                <td>type4</td>
+                <td>scheme3</td>
+                
+            </tr>
+            <tr>
+                
+                <td>central government</td>
+                <td>type4</td>
+                <td>scheme4</td>
+                
+            </tr>
+            <tr>
+                
+                <td>central government</td>
+                <td>type4</td>
+                <td>scheme4</td>
+                
+            </tr>
+
+
+        </tbody>
+    </table>
+    <!-- <script>getUniqueValuesFromColumn()
+    </script> -->
+    <script>
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+
+    </script>
+</div>
+</div>
+</body>
+
+</html>
